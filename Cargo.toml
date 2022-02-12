@@ -3,10 +3,6 @@ name = "rust-server-client"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-
 [[bin]]
 name = "server"
 path = "src/server/main.rs"
@@ -14,3 +10,8 @@ path = "src/server/main.rs"
 [[bin]]
 name = "client"
 path = "src/client/main.rs"
+
+[dependencies]
+actix-web = "4.0.0-rc.1"
+actix-session = "0.5.0-beta.7"
+serde = { version = "1.0", features = ["derive"] }
