@@ -38,7 +38,7 @@ async fn main() -> std::io::Result<()> {
             .service(name_json)
             .service(index)
     })
-    .bind(("127.0.0.1", 8085))?
+    .bind(("0.0.0.0", 8085))?
     .run()
     .await
 }
